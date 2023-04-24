@@ -10,25 +10,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <title></title>
-
+    @vite('resources/css/app.css')
 </head>
 
 <body>
-    <div id="">
-        @foreach ($user as $users)
+    <div id="app">
+        {{-- @foreach ($user as $users)
         <div class="alert {{ $users->getName()}} ">
         <p>{{ $users->name }}</p>
         </div>
 
-        @endforeach
+        @endforeach --}}
     </div>
 
+    @vite('resources/js/app.js')
 </body>
 
 </html>
-<script>
-
-window.addEventListener('popstate', function(event) {
-    alert('test');
-});
-</script>

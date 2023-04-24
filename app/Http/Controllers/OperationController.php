@@ -16,13 +16,15 @@ class OperationController extends Controller
 
     public function laravelOperaion()
     {
-        // dd("ok");
+        // dd("pk");
+
+
         // $product = Product::getData(25);
         // dump($product);
         // $number ='10';
         // $data =  (new Constructor($number));
         // dump($data);
-        $data['user'] = User::get();
+        // $data = User::get();
         // dd($user->get());
 
         // $data = Employee::all();
@@ -41,6 +43,28 @@ class OperationController extends Controller
         // return  response()->json([
         //     "record" =>$data_array
         // ]);
+
+        $data = User::get();
+        // $approve = $data->where("approve","1")->count();
+        // $cencel = $data->where("cencel","2")->count();
+        // $pending = $data->where("pending","3")->count();
+
+        // $array = [];
+        // foreach($data as $user) {
+        //     $array [] = [
+        //         "name"=>$user->name,
+        //         "approve_count" => $approve,
+        //         "cencel_count" => $cencel,
+        //         "pending_count" => $pending,
+        //     ];
+        // }
+
+        // return response()->json([
+        //     "data"=>$array
+        // ]);
+
+
+
 
 
         return view("welcome",$data);

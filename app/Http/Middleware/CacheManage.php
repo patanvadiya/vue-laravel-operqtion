@@ -19,7 +19,7 @@ class CacheManage
      */
     public function handle(Request $request, Closure $next,$till=null): Response
     {
-        $this->till = $till ?? Carbon::now()->addDay();  // default value not passed so i did put Carbon::now()->addDay()
+        $this->till = $till ?? Carbon::now()->addDay();  // default value not a passed so i did put Carbon::now()->addDay()
 
         if (Cache::has($this->cacheKey($request))) {
 

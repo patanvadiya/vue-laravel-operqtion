@@ -15,9 +15,9 @@ use App\Http\Helper\Product;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-// Route::any('{url}', function(){   this is vue page route
-//     return view('404');
-// })->where('url', '.*');
+Route::any('{url}', function(){  // this is vue page route
+    return view('welcome');
+})->where('url', '.*');
 
 
 // Route::fallback(function () {   // this is autometic redirect url in not found page
