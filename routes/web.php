@@ -44,11 +44,10 @@ Route::any('{url}', function(){  // this is vue page route
 // Hello Arpan ,
 
 
-// This is to inform you that I am resigning from the position of Business development Manager  at Webmynesystem. I recently offered a new opportunity  at a different company and I have decided to accept the offer .
+// This is to inform you that I am resigning from the position of laravel developer  at Webmynesystem. I recently offered a new opportunity  at a different company and I have decided to accept the offer .
 
 // Thank you for the opportunity to work here .
 
 // Best Regards,
 
-// Sunil Patel
-// 7987884671
+// axay patanvadiya
